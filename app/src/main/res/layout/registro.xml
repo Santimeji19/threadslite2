@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:padding="20dp"
+    tools:context=".Registro">
+
+    <TextView
+        android:id="@+id/tv_titulo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+        android:text="@string/titulo2"
+        android:textColor="@color/gris1"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="name"
+        android:background="@color/gris"
+        android:hint="@string/nombre"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="19sp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/gris1"
+        android:textColor="@color/blanco"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etApellido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="name"
+        android:background="@color/gris"
+        android:hint="@string/apellido"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="19sp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/gris1"
+        android:textColor="@color/blanco"
+        app:layout_constraintTop_toBottomOf="@id/etNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombreUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="username"
+        android:background="@color/gris"
+        android:hint="@string/nombre_usuario"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textSize="19sp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/gris1"
+        android:textColor="@color/blanco"
+        app:layout_constraintTop_toBottomOf="@id/etApellido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etContrasenaRegistro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="password"
+        android:background="@color/gris"
+        android:hint="@string/contraseña_registro"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textSize="19sp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/gris1"
+        android:textColor="@color/blanco"
+        app:layout_constraintTop_toBottomOf="@id/etNombreUsuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/etConfirmarContrasena"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autofillHints="password"
+        android:background="@color/gris"
+        android:hint="@string/confirmación_contraseña"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textSize="19sp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/gris1"
+        android:textColor="@color/blanco"
+        app:layout_constraintTop_toBottomOf="@id/etContrasenaRegistro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gris1"
+        android:padding="12dp"
+        android:text="@string/registrar"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toBottomOf="@id/etConfirmarContrasena"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gris"
+        android:padding="14dp"
+        android:text="@string/cancelar"
+        android:textAllCaps="false"
+        android:textColor="@color/gris1"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintTop_toBottomOf="@id/btnRegistro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

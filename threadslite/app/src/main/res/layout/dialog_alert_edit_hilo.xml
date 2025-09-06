@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_publicar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/ettitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="26dp"
+        android:hint="@string/titulo"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/blanco"
+        android:textColorHint="@color/blanco" />
+
+    <EditText
+        android:id="@+id/etdescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:gravity="top"
+        android:hint="@string/descripcion"
+        android:inputType="textMultiLine"
+        android:minLines="4"
+        android:padding="12dp"
+        android:textColor="@color/blanco"
+        android:textColorHint="@color/blanco" />
+    <ImageButton
+        android:id="@+id/anadirpublicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/blanco1"
+        android:src="@drawable/comprobado"/>
+
+</LinearLayout>
